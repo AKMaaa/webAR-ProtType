@@ -47,10 +47,17 @@
             </a-obj-model>
         </a-marker>
 
+        <!-- マーカーを登録（プリセットされている「kanji」マーカー） -->
+        <a-marker type="pattern" url="pattern-test.patt">
+            <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
+            <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
+            <a-box position="0 0.5 0" wireframe="true"></a-box>
+        </a-marker>
+
         <!-- AR用のカメラを置く -->
         <a-entity camera></a-entity>
 
-        <p>update 2306011217</p>
+        <p>update 2306011223</p>
     </a-scene>
 </body>
 
