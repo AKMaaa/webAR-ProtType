@@ -21,7 +21,7 @@
         <a-assets>
             <a-asset-item id="obj" src="rocket.obj"></a-asset-item> <!-- objファイル -->
             <a-asset-item id="mtl" src="rocket.mtl"></a-asset-item> <!-- mtlファイル -->
-            <a-asset-item id="AI" src="a.glb" scale="1 1 1"></a-asset-item>
+            <a-asset-item id="ai" src="a.glb" scale="1 1 1"></a-asset-item>
         </a-assets>
 
         <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
@@ -42,7 +42,7 @@
         <!-- 自作マーカー -->
         <a-marker type="pattern" url="AI.patt">
             <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
-            <a-entity gltf-model="#AI" rotation="-90 0 0"></a-entity>
+            <a-entity gltf-model="#ai" rotation="-90 0 0"></a-entity>
         </a-marker>
 
         <!-- マーカーを登録（プリセットされている「kanji」マーカー） -->
@@ -55,11 +55,8 @@
         <!-- AR用のカメラを置く -->
         <a-entity camera></a-entity>
 
-        <p>update 2306011244</p>
+        <p>update 2306011251</p>
     </a-scene>
-    <script>
-        document.querySelector("a-scene").renderer.gammaOutput=true;
-    </script>
 </body>
 
 </html>
