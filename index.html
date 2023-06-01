@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
     <title>CG モデルを登場させる</title>
 </head>
 
@@ -30,6 +31,15 @@
 
         <!-- マーカーを登録（プリセットされている「kanji」マーカー） -->
         <a-marker preset="kanji">
+            <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
+            <a-obj-model src="#obj" mtl="#mtl" scale="0.005 0.005 0.005" position="0 0.5 0">
+                <a-animation attribute="rotation" to="0 360 0" dur="3000" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-obj-model>
+        </a-marker>
+
+        <!-- 自作マーカー -->
+        <a-marker preset="AI" url="AI.patt">
             <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
             <a-obj-model src="#obj" mtl="#mtl" scale="0.005 0.005 0.005" position="0 0.5 0">
                 <a-animation attribute="rotation" to="0 360 0" dur="3000" easing="linear" repeat="indefinite">
